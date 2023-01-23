@@ -4,13 +4,10 @@
 ## Link up with the locals to make your experience really count!
 
 Have you ever returned from a trip feeling like you were just with a bunch of tourists the whole time?
-
 Have you ever returned from a trip feeling like you really got the "local experience"?
-
-Both trips are great, but how much planning they take?
+Both trips are great, but how much planning did they take?
 
 Tourist style travel is easy to plan with lots of resources, But getting the local experience is usually hit or miss.
-
 With "Like a Local" you can link up with local guides and let them take you on an adventure. Find the local favorites, from the hole in the wall family restaurant to the hidden waterfall.
 
 This application can take two routes:
