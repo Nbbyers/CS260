@@ -1,20 +1,29 @@
 
-# Like a Local
+# Hitch-a-Ride
 
-## Link up with the locals to make your experience really count!
+## A carpooling app that saves you time and money!
 
-Have you ever returned from a trip feeling like you were just with a bunch of tourists the whole time?
-Have you ever returned from a trip feeling like you really got the "local experience"?
-Both trips are great, but how much planning did they take?
+Ski canyons are struggling with a huge influx of congestion. Resorts are capitalizing on this by charging for parking. UDOT is working out the details for a $500M gondola. Neither of these "fixes" help the skiers.
 
-Tourist style travel is easy to plan with lots of resources, But getting the local experience is usually hit or miss.
-With "Like a Local" you can link up with local guides and let them take you on an adventure. Find the local favorites, from the hole in the wall family restaurant to the hidden waterfall.
-
-This application can take two routes:
-1st: campus tours. Prospective students can link up with current students to see what student life is like out of the books and off campus.
-2nd: Locals in tourist locations. Locals can put together a tour and then take visitors out away from all the tourist traps.
+Hitch-a-Ride is an app designed to help people link up with other users along their route to and from the mountain. This helps everybody save money on gas and parking, all while taking cars out of the canyon.
 
 ## How it works:
 
-First a local puts together a tour. They list activities, restaurants, and estimated prices.
-Then tourists search through tours in the area that they are visiting, and select one they like. They can message the guide and work out details, then go ejoy their visit!
+Verified drivers submit the drives they will going on with estimated times.
+
+Riders search through drives for one that fits their needs, and then send a request.
+
+Drivers can vet the requests and accept/reject certain riders.
+
+Once a rider is accepted, a message channel will be opened up for them to work out the details.
+
+## Bonus Features:
+
+An SOS feature will be activated once a ride is started. This allows the user (rider or driver) to quickly call out for help if something seems amiss.
+
+Ratings: drivers and riders will each earn a rating to help other users feel more comfortable linking up.
+
+Maps: Once a ride is started, a map with the route is pulled up so the rider can see if they go off course.
+
+## Link to my layout on figma:
+https://www.figma.com/file/8I1N960aXYo3FunwWJNDkg/The-Lift?node-id=0%3A1&t=FPu7DEU6IzlIqE4J-1
