@@ -28,6 +28,8 @@ Maps: Once a ride is started, a map with the route is pulled up so the rider can
 ## Links:
 https://www.figma.com/file/8I1N960aXYo3FunwWJNDkg/The-Lift?node-id=0%3A1&t=FPu7DEU6IzlIqE4J-1
 
+http://hitcharide.click/
+
 http://18.188.141.241
 
 ssh -i [pem] ubuntu@18.188.141.241
