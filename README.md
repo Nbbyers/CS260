@@ -33,3 +33,11 @@ http://hitcharide.click/
 http://18.188.141.241
 
 ssh -i [pem] ubuntu@18.188.141.241
+
+# Lessons Learned:
+## HTML:
+It's pretty straightforward.
+
+## CSS:
+Bootstrap is a great way to pull in premade css compontents. Link them using classes.
+Manually override bootstrap settings in .css file using keyword: !important
