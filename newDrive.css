@@ -1,0 +1,42 @@
+* {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-width: 375px;
+}
+
+header {
+  flex: 0 100px;
+  background: hsl(223, 40%, 25%);
+  padding-top: 2em;
+}
+
+footer {
+  flex: 0 100px;
+  background: hsl(180, 10%, 10%);
+  display: flex;
+  flex-direction: row;
+  padding-top: 2em;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background: hsl(223, 57%, 38%);
+  padding-top: 2em;
+}
+
+@media (orientation: portrait) {
+  main {
+    flex-direction: column;
+  }
+}
