@@ -13,11 +13,6 @@ body {
   min-width: 375px;
 }
 
-header {
-  flex: 0 100px;
-  background: hsl(223, 40%, 25%);
-  padding-top: 2em;
-}
 
 footer {
   flex: 0 100px;
@@ -28,7 +23,7 @@ footer {
 }
 
 main {
-  flex: 1;
+  flex: 1 calc(100vh - 110px);
   display: flex;
   flex-direction: row;
   background: hsl(223, 57%, 38%);
