@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 10;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -14,12 +14,24 @@ body {
 }
 
 
-footer {
+.dashFoot {
   flex: 0 100px;
   background: hsl(180, 10%, 10%);
   display: flex;
   flex-direction: row;
   padding-top: 2em;
+}
+
+footer a {
+  float: right;
+}
+
+footer span {
+  float: left
+}
+
+.regFoot {
+  background: hsl(180, 10%, 10%);
 }
 
 main {
@@ -35,16 +47,16 @@ main {
   padding-right: 3em !important;
 }
 
-section:nth-child(1) {
+main section:nth-child(1) {
   flex: 1;
 }
 
-section:nth-child(2) {
+main section:nth-child(2) {
   flex: 1;
 }
 
-section:nth-child(2) {
-  float: right;
+footer section {
+  flex: 1;
 }
 
 @media (orientation: portrait) {

@@ -19,12 +19,16 @@ header {
   padding-top: 2em;
 }
 
-footer {
-  flex: 0 100px;
+footer a {
+  float: right;
+}
+
+footer span {
+  float: left
+}
+
+.regFoot {
   background: hsl(180, 10%, 10%);
-  display: flex;
-  flex-direction: row;
-  padding-top: 2em;
 }
 
 main {
