@@ -26,6 +26,8 @@ Ratings: drivers and riders will each earn a rating to help other users feel mor
 Maps: Once a ride is started, a map with the route is pulled up so the rider can see if they go off course.
 
 ## Links:
+https://startup.hitcharide.click/
+
 https://www.figma.com/file/8I1N960aXYo3FunwWJNDkg/The-Lift?node-id=0%3A1&t=FPu7DEU6IzlIqE4J-1
 
 http://hitcharide.click/
