@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitch-a-Ride</title>
+    <link rel="icon" href="favicon.ico" />
 
+    <script src="login.js"></script>
     <link rel="stylesheet" href="login.css" />
     <!-- Bootstrap framework -->
     <link
@@ -13,12 +16,11 @@
       crossorigin="anonymous"
     />
 
-    <title>Hitch-a-Ride</title>
-    <link rel="icon" href="favicon.ico" />
   </head>
   <body class="bg-dark text-light">
     <header class="container-fluid">
       <nav class="navbar fixed-top navbar-dark">
+        <span class="username">User</span>
         <menu class="navbar-nav"> <!-- menu is a reprlacement for <ul> -->
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Login</a>
@@ -35,6 +37,7 @@
         </menu>
       </nav>
     </header>
+
     <main>
       <section>
         <img src = "mtn blue-01.svg" alt="Mountain" width="100%" height="100%" />
@@ -43,14 +46,12 @@
         <div class="wrapper">
           <form class="form-signin">
              <h1 class="form-signin-heading text-center">Hitch-a-Ride</h1>
-             <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-             <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+             <input type="text" class="form-control" id="username" placeholder="Username" required="" autofocus="" />
+             <input type="password" class="form-control" id="password" placeholder="Password" required=""/>      
              <label class="checkbox">
              <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
              </label>
-             <button class="btn btn-lg btn-primary btn-block" type="submit"
-              href = "dashboard.html"
-             >Login</button>   
+             <button class="btn btn-primary btn-block" onclick="login()">Login</button>   
           </form>
        </div>
       </section>
