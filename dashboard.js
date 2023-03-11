@@ -15,3 +15,11 @@ class Dash {
 }
 
 const dash = new Dash();
+
+function findRide() {
+  window.location.href = "findRide.html";
+}
+
+function newDrive() {
+  window.location.href = "newDrive.html";
+}
