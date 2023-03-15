@@ -6,7 +6,7 @@
     <title>Hitch-a-Ride</title>
     <link rel="icon" href="favicon.ico" />
 
-    <script src="login.js"></script>
+    <script type="module" src="login.js"></script>
     <link rel="stylesheet" href="login.css" />
     <!-- Bootstrap framework -->
     <link
@@ -51,7 +51,7 @@
              <label class="checkbox">
              <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
              </label>
-             <button class="btn btn-primary btn-block" onclick="login()">Login</button>   
+             <button id="loginButton" class="btn btn-primary btn-block" onclick="signIn.login()">Login</button>   
           </form>
        </div>
       </section>
