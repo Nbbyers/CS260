@@ -9,18 +9,7 @@ class Dash {
     console.log("username:" + user.username)
     const usernameEl = document.querySelector('.username');
     usernameEl.textContent = user.username;
-
-    //var driveObject = JSON.parse(user.drives);
-    //console.log("drives: " + driveObject);
-    user.drives.forEach(buildDriveList);
-
- 
-  }
-
-
-  getusername() {
-    return this.user.username;
-    //return localStorage.getItem('userName') ?? 'Guest';
+    this.buildDriveList(user.drives);
   }
 
   getuser() {
@@ -29,6 +18,17 @@ class Dash {
     const userParsed = JSON.parse(userData);
     console.log("UserParsed: " + userParsed);
     return userParsed;
+  }
+
+  buildDriveList(drives) {
+    let list = "<ul>";
+    for (let i of drives) {
+      list += `<li>${i.start} to ${i.destination} at ${i.time} with ${i.seats} seats available</li>`;
+    }
+    list += "</ul>";
+    
+    // (B3) APPEND LIST TO CONTAINER
+    document.getElementById("driveList").innerHTML = list;
   }
 
 }
@@ -47,6 +47,11 @@ findRideButton.addEventListener('click', () => {
   window.location.href = "findRide.html";
 })
 
+
+
+/*
+learn in the future. Might help with formatting.
+
 var listItemString = $('#listItem').html();
 
 function buildDriveList(item, index) {
@@ -61,3 +66,4 @@ function buildDriveList(item, index) {
   listItemTime.html(item.time);
   ('#driveList').append(listItem)
 }
+*/
