@@ -43,3 +43,7 @@ It's pretty straightforward.
 ## CSS:
 Bootstrap is a great way to pull in premade css compontents. Link them using classes.
 Manually override bootstrap settings in .css file using keyword: !important
+
+## JavaScript:
+Data persistence works best with JSON and storing my objects in local storage.
+Use event listeners to make buttons easier to manipulate.
