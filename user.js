@@ -7,7 +7,11 @@ export class User {
   }
 
   toString() {
-    return `${this.username}`;
+    return `${this.username} has drives: ${this.drives} and rides: ${this.rides}`;
+  }
+
+  addDrive = function(drive) {
+    this.drives.push(drive);
   }
 
 }

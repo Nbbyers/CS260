@@ -7,9 +7,7 @@ class NewDrive {
 
   constructor() {
     const usernameEl = document.querySelector('.username');
-    usernameEl.textContent = this.getusername();
-    //const user = new User('guest');
-    //console.log(`${user}`);
+    usernameEl.textContent = getuser().username;
   }
 
 
@@ -17,23 +15,11 @@ class NewDrive {
     return localStorage.getItem('userName') ?? 'Guest';
   }
 
-  addDrive() {
-    //user = new User('guest');
-    let start = document.getElementById('startAddress');
-    let dest = document.getElementById('destination');
-    let seats = document.getElementById('numSeats');
-    let time = document.getElementById('startTime');
-    
-    
-    const d = new Drive(start.value, dest.value, seats.value, time.value);
   
-    user.drives.push(d);
-    console.log(`${d}`);
-  }
 
 }
 
-const user = localStorage.getItem("user2");
+const user = localStorage.getItem("user");
 
 const newDrive = new NewDrive();
 
@@ -44,6 +30,32 @@ cancelButton.addEventListener('click', () => {
 
 let submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', () => {
-  newDrive.addDrive();
-  //window.location.href = "dashboard.html";
+  addDrive();
+  window.location.href = "dashboard.html";
 })
+
+function addDrive() {
+  const user = getuser();
+
+  console.log(`${user}`);
+  let start = document.getElementById('startAddress');
+  let dest = document.getElementById('destination');
+  let seats = document.getElementById('numSeats');
+  let time = document.getElementById('startTime');
+  
+  
+  const d = new Drive(start.value, dest.value, seats.value, time.value);
+
+  user.drives.push(d);
+  console.log(`${d}`);
+  localStorage.setItem("user", JSON.stringify(user));
+
+}
+
+function getuser() {
+  const userData = localStorage.getItem('user') ?? new User('Guest');
+  console.log("UserData: " + userData);
+  const userParsed = JSON.parse(userData);
+  console.log("UserParsed: " + userParsed);
+  return userParsed;
+}
