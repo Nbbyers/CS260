@@ -20,7 +20,7 @@
   <body class="bg-dark text-light">
     <header class="container-fluid">
       <nav class="navbar fixed-top navbar-dark">
-        <span class="username">User</span>
+        <span class="username"></span>
         <menu class="navbar-nav"> <!-- menu is a reprlacement for <ul> -->
           <li class="nav-item">
             <a class="nav-link active" href="index.html">Login</a>
@@ -38,8 +38,40 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container-fluid text-center">
       <section>
+        <img src = "mtn blue-01.svg" alt="Mountain" width="100%" height="100%" />
+      </section>
+      <section>
+        <div>
+          <h1 class="form-signin-heading text-center">Hitch-a-Ride</h1>
+          <input type="text" class="form-control" id="username" placeholder="Username" required="" autofocus="" />
+          <input type="password" class="form-control" id="password" placeholder="Password" required=""/>      
+          <label class="checkbox">
+          <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+          </label>
+          <button id="loginButton" class="btn btn-primary btn-block">Login</button>   
+       </div>
+      </section>
+      
+    </main>
+  </body>
+</html>
+
+
+<!-- 
+<div>
+        <h1>Welcome</h1>
+        <p>Login to play</p>
+        <div>
+          <input type="text" id="username" placeholder="Your name here" />
+          <button id="loginButton" class="btn btn-primary" >Login</button>
+        </div>
+      </div>
+
+
+
+<section>
         <img src = "mtn blue-01.svg" alt="Mountain" width="100%" height="100%" />
       </section>
       <section>
@@ -51,10 +83,9 @@
              <label class="checkbox">
              <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
              </label>
-             <button id="loginButton" class="btn btn-primary btn-block" onclick="signIn.login()">Login</button>   
+             <button id="loginButton" class="btn btn-primary btn-block">Login</button>   
           </form>
        </div>
       </section>
-    </main>
-  </body>
-</html>
+  
+-->
