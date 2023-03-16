@@ -10,6 +10,7 @@ class Dash {
     const usernameEl = document.querySelector('.username');
     usernameEl.textContent = user.username;
     this.buildDriveList(user.drives);
+    this.buildRideList(user.rides);
   }
 
   getuser() {
@@ -31,11 +32,20 @@ class Dash {
     document.getElementById("driveList").innerHTML = list;
   }
 
+  buildRideList(rides) {
+    let list = "<ul>";
+    for (let i of rides) {
+      list += `<li>${i.start} to ${i.destination} at ${i.time} with ${i.seats} seats available</li>`;
+    }
+    list += "</ul>";
+    
+    // (B3) APPEND LIST TO CONTAINER
+    document.getElementById("rideList").innerHTML = list;
+  }
+
 }
 
 const dash = new Dash();
-
-const user = dash.getuser();
 
 let newDriveButton = document.getElementById('newDrive');
 newDriveButton.addEventListener('click', () => {

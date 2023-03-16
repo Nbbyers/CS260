@@ -3,23 +3,11 @@ import {User} from './user.js';
 
 class NewDrive {
   
-  
-
   constructor() {
     const usernameEl = document.querySelector('.username');
     usernameEl.textContent = getuser().username;
   }
-
-
-  getusername() {
-    return localStorage.getItem('userName') ?? 'Guest';
-  }
-
-  
-
 }
-
-const user = localStorage.getItem("user");
 
 const newDrive = new NewDrive();
 
