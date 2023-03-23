@@ -47,3 +47,6 @@ Manually override bootstrap settings in .css file using keyword: !important
 ## JavaScript:
 Data persistence works best with JSON and storing my objects in local storage.
 Use event listeners to make buttons easier to manipulate.
+
+## Web Services:
+Endpoints accept a request and return a response. Endpoints can call a function that performs certain logic. Best practice is to send data through API and then update the local storage, as well as try to retrieve from API and only grab from local storage if that fails. Node's express server is on higher layer of project code. html and everything else goes in the public folder.
