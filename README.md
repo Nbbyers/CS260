@@ -50,3 +50,6 @@ Use event listeners to make buttons easier to manipulate.
 
 ## Web Services:
 Endpoints accept a request and return a response. Endpoints can call a function that performs certain logic. Best practice is to send data through API and then update the local storage, as well as try to retrieve from API and only grab from local storage if that fails. Node's express server is on higher layer of project code. html and everything else goes in the public folder.
+
+## Database/MongoDB:
+Proper technique is to save credentials as environment variables and then call them from the host so we aren't shipping credentials with the code. With mongoDB we can build collections using json and then request items from those collections. EX: const collection = client.db("test").collection("devices");
