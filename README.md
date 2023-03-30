@@ -54,5 +54,8 @@ Endpoints accept a request and return a response. Endpoints can call a function 
 ## Database/MongoDB:
 Proper technique is to save credentials as environment variables and then call them from the host so we aren't shipping credentials with the code. With mongoDB we can build collections using json and then request items from those collections. EX: const collection = client.db("test").collection("devices");
 
-##Account Authentication:
+## Account Authentication:
 Services such as google firebase and AWS Cognito provide simple plugins for account authorization. Auth tokens are usually stored as cookies on the device for a set amount of time. They are stored with the authorization level to restrict access based on the user's role.
+
+## WebSockets:
+Client and server create a peer to peer connection where they can both update eachother. Connections are only 1 to 1 so the server has to facilitate conversations between a group of clients. Have each client connect to the server and then the server pushes updates to the clients. Use the syntax: const socket = new WebSocket('ws://localhost:9900'); to create the socket. To handle events: socket.onmessge = (event) => { console.log('recieved: ', event.data); };. To send data use: socket.send('message');
