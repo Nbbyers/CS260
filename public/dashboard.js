@@ -1,4 +1,3 @@
-import {User} from './user.js';
 class Dash {
   
 
@@ -14,7 +13,7 @@ class Dash {
   }
 
   getuser() {
-    const userData = localStorage.getItem('user') ?? new User('Guest');
+    const userData = localStorage.getItem('userName');
     console.log("UserData: " + userData);
     const userParsed = JSON.parse(userData);
     console.log("UserParsed: " + userParsed);

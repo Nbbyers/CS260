@@ -42,6 +42,7 @@ apiRouter.post('/auth/create', async (req, res) => {
 // GetAuth token for the provided credentials
 apiRouter.post('/auth/login', async (req, res) => {
   const user = await DB.getUser(req.body.email);
+  console.log("DB User: " + user);
   if (user) {
     if (await bcrypt.compare(req.body.password, user.password)) {
       setAuthCookie(res, user.token);

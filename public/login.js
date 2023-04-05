@@ -23,6 +23,7 @@
   if (userName) {
     const nameEl = document.querySelector('#userName');
     nameEl.value = userName;
+    console.log("username: " + nameEl.value);
     const user = await getUser(nameEl.value);
     authenticated = user?.authenticated;
   }
@@ -59,6 +60,7 @@ async function loginOrCreate(endpoint) {
 
   if (response?.status === 200) {
     localStorage.setItem('userName', userName);
+    console.log("Set name: " + userName);
     window.location.href = 'dashboard.html';
   } else {
     const modalEl = document.querySelector('#msgModal');
