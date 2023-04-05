@@ -22,9 +22,6 @@
       <nav class="navbar fixed-top navbar-dark">
         <menu class="navbar-nav"> <!-- menu is a reprlacement for <ul> -->
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Login</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active" href="dashboard.html">Dashboard</a>
           </li>
           <li class="nav-item">
@@ -32,6 +29,10 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="findRide.html">Find Ride</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary" onclick="logout()">Logout</button>
+          </li>
           </li>
         </menu>
       </nav>
@@ -69,5 +70,6 @@
     </footer>
 
     <script type="module" src="dashboard.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>
