@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="header.css" />
     <!-- Bootstrap framework -->
@@ -19,32 +18,47 @@
   </head>
   <body class="bg-dark text-light">
     <header class="container-fluid">
+      <span class="username"></span>
       <nav class="navbar fixed-top navbar-dark">
         <menu class="navbar-nav"> <!-- menu is a reprlacement for <ul> -->
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dashboard.html">Dashboard</a>
+            <a class="nav-link active" href="dashboard.html">Dashboard</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="newDrive.html">New Drive</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="findRide.html">Find Ride</a>
+            <a class="nav-link" href="findRide.html">Find Ride</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary" onclick="logout()">Logout</button>
+          </li>
           </li>
         </menu>
       </nav>
     </header>
     <main>
       <section>
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">First item</a>
-          <a href="#" class="list-group-item list-group-item-action">Second item</a>
-          <a href="#" class="list-group-item list-group-item-action">Third item</a>
+        <div>
+          <h2>Drives</h2>
+          <div id="driveList"></div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Rides</h2>
+          <div id="rideList"></div>
         </div>
       </section>
     </main>
+    <footer class="dashFoot">
+      <section>
+        <button id="newDrive" type="button" class="btn btn-primary btn-rounded">New Drive</button>
+      </section>
+      <section>
+        <button id="findRide" type="button" class="btn btn-primary btn-rounded">Find Ride</button>
+      </section>
+    </footer>
     <footer class="regFoot">
       <div class="container-fluid">
         <span class="text-reset">Nathan Byers</span>
@@ -54,5 +68,8 @@
           >Source</a>
       </div>
     </footer>
+
+    <script src="dashboard.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

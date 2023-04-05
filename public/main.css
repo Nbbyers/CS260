@@ -47,6 +47,17 @@ main {
   padding-right: 3em !important;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul li {
+  color: black;
+  background-color: white;
+  margin: 5px;
+}
+
 main section:nth-child(1) {
   flex: 1;
 }
