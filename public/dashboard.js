@@ -3,17 +3,21 @@ class Dash {
 
   constructor() {
     console.log("in dash");
-    const user = this.getuser();
-    console.log("user: " + user);
-    console.log("username:" + user.username)
+    //const user = this.getuser();
+    const userName = this.getUsername();
+    console.log("username:" + userName)
     const usernameEl = document.querySelector('.username');
-    usernameEl.textContent = user.username;
-    this.buildDriveList(user.drives);
-    this.buildRideList(user.rides);
+    usernameEl.textContent = userName;
+    //this.buildDriveList(user.drives);
+    //this.buildRideList(user.rides);
+  }
+
+  getUsername() {
+    return localStorage.getItem('userName');
   }
 
   getuser() {
-    const userData = localStorage.getItem('userName');
+    const userData = localStorage.getItem('user');
     console.log("UserData: " + userData);
     const userParsed = JSON.parse(userData);
     console.log("UserParsed: " + userParsed);

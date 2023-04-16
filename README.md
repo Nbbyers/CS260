@@ -59,3 +59,13 @@ Services such as google firebase and AWS Cognito provide simple plugins for acco
 
 ## WebSockets:
 Client and server create a peer to peer connection where they can both update eachother. Connections are only 1 to 1 so the server has to facilitate conversations between a group of clients. Have each client connect to the server and then the server pushes updates to the clients. Use the syntax: const socket = new WebSocket('ws://localhost:9900'); to create the socket. To handle events: socket.onmessge = (event) => { console.log('recieved: ', event.data); };. To send data use: socket.send('message');
+
+## React:
+Pros: ability to build modular components, use state to update the page, and use props to pass data between components.
+
+React converts an application from a multi-page application to a single page application. The browser loads a single HTML page and then the react code takes over and renders the page based on the state of the application. React uses a virtual DOM to keep track of changes and only updates the page when necessary.
+
+Basic react framework can be created with: npx create-react-app [appname]
+
+React hooks are a way to use state and other features without having to use classes. EX: const [count, setCount] = useState(0);. Hooks can be used in functional components.
+

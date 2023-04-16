@@ -14,7 +14,7 @@ const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
 const client = new MongoClient(url);
 const userCollection = client.db('startup').collection('user');
-const scoreCollection = client.db('startup').collection('drives');
+const driveCollection = client.db('startup').collection('drives');
 
 function getUser(email) {
   return userCollection.findOne({ email: email });
@@ -39,25 +39,25 @@ async function createUser(email, password) {
 }
 
 function addDrive(drive) {
-  scoreCollection.insertOne(drive);
+  driveCollection.insertOne(drive);
 }
 
 function getDrives() {
-  const userName = localStorage.getItem('userName');
+  //const userName = localStorage.getItem('userName');
   const query = {};
   const options = {
-    sort: { score: -1 },
+    sort: { time: -1 },
     limit: 10,
   };
-  const cursor = scoreCollection.find(query, options);
+  const cursor = driveCollection.find(query, options);
   return cursor.toArray();
 }
 
 function getRides() {
-  const userName = localStorage.getItem('userName');
+  //const userName = localStorage.getItem('userName');
   const query = {};
   const options = {
-    sort: { score: -1 },
+    sort: { time: -1 },
     limit: 10,
   };
   const cursor = scoreCollection.find(query, options);

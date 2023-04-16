@@ -63,8 +63,8 @@
           <label for="returnTime" class="form-label">Return Meet Up Time</label>
           <input type="datetime-local" class="form-control" id="returnTime" disabled>
         </div>
-        <button id="cancel" type="button" class="btn btn-secondary">Cancel</button>
-        <button id="submit" type="button" class="btn btn-primary">Submit</button>
+        <button class="btn btn-secondary" onclick="newDrive.cancel()">Cancel</button>
+        <button class="btn btn-primary" onclick="newDrive.addDrive()">Submit</button>
       </form>
     </main>
     <footer class="regFoot">
@@ -76,6 +76,6 @@
           >Source</a>
       </div>
     </footer>
-    <script type="module" src="newDrive.js"></script>
+    <script src="newDrive.js"></script>
   </body>
 </html>
