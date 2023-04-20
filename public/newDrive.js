@@ -53,6 +53,9 @@ class NewDrive {
 
     localStorage.setItem('drives', JSON.stringify(drives));
   }
+
+
+
 }
 
 const newDrive = new NewDrive();
@@ -60,3 +63,14 @@ const newDrive = new NewDrive();
 function getUsername() {
   return localStorage.getItem('userName');
 }
+
+let cancelButton = document.getElementById('cancel');
+cancelButton.addEventListener('click', () => {
+  window.location.href = "dashboard.html";
+})
+
+let addDriveButton = document.getElementById('submit');
+addDriveButton.addEventListener('click', () => {
+  newDrive.addDrive();
+  window.location.href = "dashboard.html";
+})
